@@ -1,0 +1,104 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Container */
+.blog-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+  transition: background 0.3s ease;
+  position: relative;
+}
+
+/* Dark Theme */
+.blog-container.dark-theme {
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+  --bg-primary: #0a0a0f;
+  --bg-secondary: rgba(255, 255, 255, 0.03);
+  --border-color: rgba(102, 126, 234, 0.1);
+  --text-primary: white;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --card-bg: rgba(255, 255, 255, 0.02);
+  --accent-primary: #667eea;
+  --accent-secondary: #764ba2;
+  --card-hover-bg: rgba(255, 255, 255, 0.06);
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --accent-light: #a8b5ff;
+  --border-hover: rgba(102, 126, 234, 0.3);
+  --input-bg: rgba(255, 255, 255, 0.1);
+  --input-border: rgba(255, 255, 255, 0.2);
+  --input-focus-bg: rgba(255, 255, 255, 0.15);
+  --placeholder-color: rgba(255, 255, 255, 0.5);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(102, 126, 234, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.8);
+  --focus-ring: rgba(102, 126, 234, 0.2);
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-card: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+}
+
+/* Light Theme */
+.blog-container.light-theme {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  --bg-primary: #f8f9fa;
+  --bg-secondary: rgba(255, 255, 255, 0.9);
+  --border-color: rgba(85, 104, 211, 0.15);
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --accent-primary: #5568d3;
+  --accent-secondary: #6b4a9e;
+  --card-hover-bg: rgba(255, 255, 255, 1);
+  --text-muted: #718096;
+  --accent-light: #7c3aed;
+  --border-hover: rgba(85, 104, 211, 0.4);
+  --input-bg: rgba(255, 255, 255, 0.95);
+  --input-border: rgba(0, 0, 0, 0.15);
+  --input-focus-bg: #ffffff;
+  --placeholder-color: #a0aec0;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(85, 104, 211, 0.2);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15);
+  --focus-ring: rgba(85, 104, 211, 0.3);
+  --gradient-primary: linear-gradient(135deg, #5568d3 0%, #6b4a9e 100%);
+  --gradient-card: linear-gradient(135deg, rgba(85, 104, 211, 0.05) 0%, rgba(107, 74, 158, 0.05) 100%);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(102, 126, 234, 0.5);
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(102, 126, 234, 0.7);
+}
+
+/* Light theme scrollbar */
+.light-theme ::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.light-theme ::-webkit-scrollbar-thumb {
+  background: rgba(85, 104, 211, 0.4);
+}
+
+.light-theme ::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 104, 211, 0.6);
+}
+
