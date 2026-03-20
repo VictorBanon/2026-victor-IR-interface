@@ -1,0 +1,10 @@
+arm,gap,count,min_max,frequency
+4,14,1,min,0.2
+5,0,1,min,0.2
+5,9,1,min,0.2
+6,3,1,min,0.2
+7,19,1,min,0.2
+6,7,1,max,0.2
+7,3,1,max,0.2
+7,7,2,max,0.4
+8,2,1,max,0.2

@@ -1,0 +1,17 @@
+{
+  "files": "ALL_FILES",
+  "output_path": "results",
+  "replica_number": 10,
+  "name_output": "test",
+  "split_mode": "each_special_R",
+  "pipeline_mode": "parallel_on_files",
+  "n_jobs": 2,
+  "replicons": "none",
+  "sample_size": -1,
+  "min_ir_size": 3,
+  "max_ir_size": 1000,
+  "max_gap": 20,
+  "max_mismatch": 0,
+  "input_path": "data/NCBI-partial-12-rep",
+  "output_format": "custom"
+}
